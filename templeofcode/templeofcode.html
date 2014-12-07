@@ -3,12 +3,22 @@
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
-
-  {{> hello}}
+  <form class="search-box">
+    <input name="text" type="text" class="search-bar" />
+    <button name="submit" type="button" class="search-button" data-text-original="Search" data-text-loading="Loading..">Search</button>
+  </form>
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="landing">
 </template>
+
+<template name="find_project">
+
+  <ul>
+  {{#each results}}
+  <li>{{name}}</li>
+  {{/each}}
+  </ul>
+
+</template>
+
