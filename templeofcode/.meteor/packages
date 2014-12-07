@@ -9,4 +9,7 @@ insecure
 iron:router
 accounts-ui
 accounts-password
+server-eval
+jquery
+bootstrap
 
